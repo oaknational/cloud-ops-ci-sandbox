@@ -1,0 +1,16 @@
+# Set update schedule for GitHub Actions
+
+version: 2
+updates:
+
+  # - package-ecosystem: "github-actions"
+  #   directory: "/"
+  #   allow:
+  #     - dependency-name: "oaknational/oak-terraform-actions/actions/*"
+  #   schedule:
+  #     interval: "weekly"
+
+  - package-ecosystem: "terraform"
+    directories: ["infrastructure/**/*"]
+    schedule:
+      interval: "daily"
