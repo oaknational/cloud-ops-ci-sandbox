@@ -12,5 +12,7 @@ updates:
 
   - package-ecosystem: "terraform"
     directories: ["infrastructure/**/*"]
+    allow:
+      - dependency-name: "*oaknational/oak-terraform-modules*"
     schedule:
       interval: "daily"
