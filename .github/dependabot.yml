@@ -9,6 +9,10 @@ updates:
       - dependency-name: "oaknational/oak-terraform-actions"
     schedule:
       interval: "daily"
+    labels:
+      - "dependencies"
+      - "github_actions"
+      - "review:cloud-ops"
 
   - package-ecosystem: "terraform"
     directories: ["infrastructure/**/*"]
@@ -16,3 +20,7 @@ updates:
       - dependency-name: "*::github::oaknational/oak-terraform-modules::*"
     schedule:
       interval: "daily"
+    labels:
+      - "dependencies"
+      - "terraform"
+      - "review:cloud-ops"
