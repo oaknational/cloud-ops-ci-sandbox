@@ -3,12 +3,12 @@
 version: 2
 updates:
 
-  # - package-ecosystem: "github-actions"
-  #   directory: "/"
+  - package-ecosystem: "github-actions"
+    directory: "/"
   #   allow:
   #     - dependency-name: "oaknational/oak-terraform-actions/actions/*"
-  #   schedule:
-  #     interval: "weekly"
+    schedule:
+      interval: "daily"
 
   - package-ecosystem: "terraform"
     directories: ["infrastructure/**/*"]
