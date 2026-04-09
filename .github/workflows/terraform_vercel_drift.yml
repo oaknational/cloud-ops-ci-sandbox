@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Drift Detection - ${{ matrix.workspace }}
         uses: oaknational/oak-terraform-actions/actions/terraform-vercel-drift@2fdf2b9df9a56ed0b7f5b16a70d07ceaf91a8475 # v1.4.2
