@@ -1,5 +1,5 @@
 module "vercel" {
-  source                           = "github.com/oaknational/oak-terraform-modules//modules/vercel_project?ref=v2.0.2"
+  source                           = "github.com/oaknational/oak-terraform-modules//modules/vercel_project?ref=v2.0.3"
   build_type                       = "function"
   cloudflare_zone_domain           = "domain"
   environment_variables            = []
